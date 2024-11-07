@@ -10,10 +10,10 @@ Lue luotettavampia uutisia.
 
 ## Ominaisuudet
 
- - **Automaattinen otsikoiden korjaus**: Muokkaa klikkiotsikot vastaamaan paremmin uutisen sisältöä.
- - **Helppokäyttöisyys**: Toimii useimmissa verkkoselaimissa ilman monimutkaisia asennusta.
- - **Avoin lähdekoodi**: Varmistaa läpinäkyvyyden ja jatkuvan kehityksen.
- - **Freemium-malli**: Ilmainen perusversio, maksullinen korjaus paywall-sivustoille.
+ - **Automaattinen otsikoiden korjaus**: muokkaa klikkiotsikot vastaamaan paremmin uutisen sisältöä.
+ - **Helppokäyttöisyys**: toimii useimmissa verkkoselaimissa ilman monimutkaisia asennusta.
+ - **Avoin lähdekoodi**: varmistaa läpinäkyvyyden ja jatkuvan kehityksen.
+ - **Freemium-malli**: ilmainen perusversio, maksullinen korjaus paywall-sivustoille.
 
 ## Toiminta
 
