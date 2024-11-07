@@ -1,10 +1,12 @@
-# Klikkikuri - Uutisia ilman klikkiotsikoita
+# Klikkikuri - Uutiset ilman klikkiotsikoita
 
 ![](assets/logo.png)
 
 **Klikkikuri** on selainlaajennus, joka tunnistaa ja korjaa sensaatiohakuiset uutisotsikot, kun selailet verkkolehtien uutissivuja. Tarjoamme ainoana suomalaisena ratkaisuna luotettavampaa uutisointia suomalaisille uutisten kuluttajille hyödyntäen tekoälyä ja avoimen lähdekoodin teknologiaa.
 
 Rakennamme Klikkikurin protoa [Yritystehtaan myöntämällä tuotekehitysrahoituksella](https://yritystehdas.fi/tuotekehitysrahoitus). Kyseessä on alkuvaiheen ideoiden kokeilemiseen tarkoitettu rahoitus, jonka tavoitteena on innostaa keksimään ja kokeilemaan uusia palveluita rohkeasti. Yritystehdas on Jyväskylän kaupungin, Jyväskylän yliopiston ja Jyväskylän ammattikorkeakoulun omistama yrityshautomo.
+
+Lue luotettavampia uutisia.
 
 ## Ominaisuudet
 
