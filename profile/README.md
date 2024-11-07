@@ -1,4 +1,4 @@
-# Klikkikuri - Uutiset ilman klikkiotsikoita
+# Klikkikuri – uutiset ilman klikkiotsikoita
 
 ![](assets/logo.png)
 
