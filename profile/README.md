@@ -2,7 +2,11 @@
 
 ![](assets/logo.png)
 
-**Klikkikuri** on selainlaajennus, joka tunnistaa ja korjaa sensaatiohakuiset uutisotsikot. Se tarjoaa luotettavampaa uutisointia suomalaisille uutisten kuluttajille hyödyntäen tekoälyä ja avoimen lähdekoodin teknologiaa.
+**Klikkikuri** on selainlaajennus, joka tunnistaa ja korjaa sensaatiohakuiset uutisotsikot, kun selailet verkkolehtien uutissivuja. Tarjoamme ainoana suomalaisena ratkaisuna luotettavampaa uutisointia suomalaisille uutisten kuluttajille hyödyntäen tekoälyä ja avoimen lähdekoodin teknologiaa.
+
+## Ajankohtaiset
+
+Rakennamme Klikkikurin protoa Yritystehtaan myöntämällä tuotekehitysrahoituksella. Kyseessä on alkuvaiheen ideoiden kokeilemiseen tarkoitettu rahoitus, jonka tavoitteena on innostaa keksimään ja kokeilemaan uusia palveluita niitä rohkeasti.
 
 ## Ominaisuudet
 
