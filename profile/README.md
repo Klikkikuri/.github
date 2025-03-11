@@ -4,7 +4,7 @@
 
 **Klikkikuri** on selainlaajennus, joka tunnistaa ja oikaisee sensaatiohakuiset uutisotsikot kun selailet verkkolehtien uutissivuja. Tarjoamme ainoana suomalaisena ratkaisuna luotettavampaa uutisointia suomalaisille uutisten kuluttajille hyödyntäen tekoälyä ja avoimen lähdekoodin teknologiaa.
 
-Koe uutiset luotettavimmiksi.
+*Koe uutiset luotettavimmiksi.*
 
 ## Ominaisuudet
 
@@ -41,6 +41,17 @@ Klikkikuri-laajennus ei kerää käyttäjältä tietoja muissa tilanteissa kuin:
 Käyttämällä paikallista vedosta tietokannasta palveluun ei tarvitse myöskään lähettää kutsuja, jolloin palvelu ei voi seurata käyttäjien uutissivusto-käyttäytymistä.
 
 ## Usein kysyttyjä kysymyksiä
+
+- [Kuinka luotettava Klikkikuri on?](#kuinka-luotettava-klikkikuri-on)
+- [Näenkö alkuperäisen otsikon mistään?](#näenkö-alkuperäisen-otsikon-mistään)
+- [Miksi näen edelleen klikkiotsikoita?](#miksi-näen-edelleen-klikkiotsikoita)
+- [Voinko tehdä jotain jos oikaistu otsikko on huonompi kuin alkuperäinen?](#voinko-tehdä-jotain-jos-oikaistu-otsikko-on-huonompi-kuin-alkuperäinen)
+- [Kuinka usein uutisotsikoita päivitetään?](#kuinka-usein-uutisotsikoita-päivitetään)
+- [Mitä maksullinen tilausversio sisältää?](#mitä-maksullinen-tilausversio-sisältää)
+- [Toimiiko Klikkikuri sosiaalisessa mediassa?](#toimiiko-klikkikuri-sosiaalisessa-mediassa)
+- [Voinko käyttää Klikkikuria mobiililaitteilla?](#voinko-käyttää-klikkikuria-mobiililaitteilla)
+- [Seuraako Klikkikuri uutisia joita luen?](#seuraako-klikkikuri-uutisia-joita-luen)
+- [Tuhoaako Klikkikuri luontoa?](#tuhoaako-klikkikuri-luontoa)
 
 ### Kuinka luotettava Klikkikuri on?
 
@@ -102,7 +113,7 @@ Ikävä kyllä[^paper-greenai]. Vaikutusten vähentämiseksi Klikkikuri-palvelu 
 
 Klikkikurin kehitys on mahdollista kiitos [Jyväskylän Yliopiston](https://www.jyu.fi), [Jyväskylän kaupungin](https://www.jyvaskyla.fi) sekä [Jyväskylän Ammattikorkeakoulun](https://www.jamk.fi) omistaman [Jyväskylän Yritystehtaan myöntämän rahoituksen](https://yritystehdas.fi/tuotekehitysrahoitus) ansiosta. Tehty ❤️ Jyväskylässä.
 
-## Lähteitä
+
 [^chatgpt-policy]: [“Usage Policies.”](https://openai.com/policies/usage-policies/) Openai.com.
 [^chatgpt-no-nsfw]: [“Model Spec (2024/05/08).”](https://cdn.openai.com/spec/model-spec-2024-05-08.html#dont-respond-with-nsfw-content) Openai.com.
 [^deepseek-tian]: [“We Tried out DeepSeek. It Worked Well, until We Asked It about Tiananmen Square and Taiwan.”](https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan) The Guardian.
