@@ -51,7 +51,7 @@ Käyttämällä paikallista vedosta tietokannasta palveluun ei tarvitse myöskä
 - [Toimiiko Klikkikuri sosiaalisessa mediassa?](#toimiiko-klikkikuri-sosiaalisessa-mediassa)
 - [Voinko käyttää Klikkikuria mobiililaitteilla?](#voinko-käyttää-klikkikuria-mobiililaitteilla)
 - [Seuraako Klikkikuri uutisia joita luen?](#seuraako-klikkikuri-uutisia-joita-luen)
-- [Mikä on selainlaajennuksen mukana tuleva binääri](Mikä-on-selainlaajennuksen-mukana-tuleva-binääri)
+- [Mikä on selainlaajennuksen mukana tuleva binääri?](#mikä-on-selainlaajennuksen-mukana-tuleva-binääri)
 - [Tuhoaako Klikkikuri luontoa?](#tuhoaako-klikkikuri-luontoa)
 
 ### Kuinka luotettava Klikkikuri on?
@@ -68,7 +68,7 @@ Klikkikuri muuttaa ainoastaan otsikot linkeissä, kuten etusivulla jossa tyypill
 
 Laajennuksen voi ottaa myös pois käytöstä väliaikaisesti, sekä asetuksista määritellä kuinka paljon otsikoiden tulee olla harhaanjohtava ennen kuin ne muutetaan.
 
-### Miksi näen edelleen klikkiotsioita?
+### Miksi näen edelleen klikkiotsikoita?
 
 Selainlaajennus käyttää staattista listaa yksityisyyden suojaamiseksi. Staattisuuden vuoksi lista päivittyy viiveellä, eikä aina sisällä uusimpia otsikoita.
 
@@ -106,7 +106,7 @@ Ainoastaan jotkin mobiiliselaimet ovat selainlaajennuksen tukemia. Myöskään m
 
 Ei. Katso [Yksityisyys](#yksityisyys).
 
-### Mikä on selain laajennuksen mukana tuleva binääri?
+### Mikä on selainlaajennuksen mukana tuleva binääri?
 
 Selainlaajunneksen mukana tule binääri on [WebAssembly modulli joka vastaa otsikoiden tunnistamisesta](https://github.com/Klikkikuri/suola). Moduuli on binääri, jotta sekä taustapuolen prosessointi, että selainlaajennus voivat käyttää samaa koodia eroavaisuuksien välttämiseksi. Selainlaajennuksen mukana tuleva moduuli on täysin sama mikä on saatavilla githubista, ja varmistettavissa että binääri vastaa lähdekoodia joka on ollut githubissa sen kääntöhetkellä (`gh attestation verify --repo Klikkikuri/suola js.wasm`).
 
