@@ -51,6 +51,7 @@ Käyttämällä paikallista vedosta tietokannasta palveluun ei tarvitse myöskä
 - [Toimiiko Klikkikuri sosiaalisessa mediassa?](#toimiiko-klikkikuri-sosiaalisessa-mediassa)
 - [Voinko käyttää Klikkikuria mobiililaitteilla?](#voinko-käyttää-klikkikuria-mobiililaitteilla)
 - [Seuraako Klikkikuri uutisia joita luen?](#seuraako-klikkikuri-uutisia-joita-luen)
+- [Mikä on selainlaajennuksen mukana tuleva binääri](Mikä-on-selainlaajennuksen-mukana-tuleva-binääri)
 - [Tuhoaako Klikkikuri luontoa?](#tuhoaako-klikkikuri-luontoa)
 
 ### Kuinka luotettava Klikkikuri on?
@@ -104,6 +105,10 @@ Ainoastaan jotkin mobiiliselaimet ovat selainlaajennuksen tukemia. Myöskään m
 ### Seuraako Klikkikuri uutisia joita luen?
 
 Ei. Katso [Yksityisyys](#yksityisyys).
+
+### Mikä on selain laajennuksen mukana tuleva binääri?
+
+Selainlaajunneksen mukana tule binääri on [WebAssembly modulli joka vastaa otsikoiden tunnistamisesta](https://github.com/Klikkikuri/suola). Moduuli on binääri, jotta sekä taustapuolen prosessointi, että selainlaajennus voivat käyttää samaa koodia eroavaisuuksien välttämiseksi. Selainlaajennuksen mukana tuleva moduuli on täysin sama mikä on saatavilla githubista, ja varmistettavissa että binääri vastaa lähdekoodia joka on ollut githubissa sen kääntöhetkellä (`gh attestation verify --repo Klikkikuri/suola js.wasm`).
 
 ### Tuhoaako Klikkikuri luontoa?
 
