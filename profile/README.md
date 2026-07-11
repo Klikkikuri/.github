@@ -25,6 +25,7 @@
     - [Mikä on selainlaajennuksen mukana tuleva binääri?](#mikä-on-selainlaajennuksen-mukana-tuleva-binääri)
     - [Tuhoaako Klikkikuri luontoa?](#tuhoaako-klikkikuri-luontoa)
   - [Kiitokset](#kiitokset)
+  - [Lähteet](#lähteet)
 
 ## Asennus
 
@@ -132,19 +133,19 @@ Ikävä kyllä[^paper-greenai]. Vaikutusten vähentämiseksi Klikkikuri-palvelu 
 
 Klikkikurin kehitys on mahdollista kiitos [Jyväskylän Yliopiston](https://www.jyu.fi), [Jyväskylän kaupungin](https://www.jyvaskyla.fi) sekä [Jyväskylän Ammattikorkeakoulun](https://www.jamk.fi) omistaman [Jyväskylän Yritystehtaan myöntämän rahoituksen](https://yritystehdas.fi/tuotekehitysrahoitus) ansiosta. Tehty ❤️ Jyväskylässä.
 
----
+## Lähteet
 
-- [^chatgpt-policy]: [“Usage Policies.”](https://openai.com/policies/usage-policies/) Openai.com.
-- [^chatgpt-no-nsfw]: [“Model Spec (2024/05/08).”](https://cdn.openai.com/spec/model-spec-2024-05-08.html#dont-respond-with-nsfw-content) Openai.com.
-- [^deepseek-tian]: [“We Tried out DeepSeek. It Worked Well, until We Asked It about Tiananmen Square and Taiwan.”](https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan) The Guardian.
-- [^deepseek-cn-prop]: [“DeepSeek’s Answers Include Chinese Propaganda, Researchers Say.”](https://www.nytimes.com/2025/01/31/technology/deepseek-chinese-propaganda.html) The New York Times.
-- [^xai-antiwoke]: [“Inside Grok’s War on ‘Woke.’”](https://www.businessinsider.com/xai-grok-training-bias-woke-idealogy-2025-02?op=1) Business Insider.
-- [^xai-rebel]: [“Elon Musk Announces Grok, a ‘Rebellious’ AI With Few Guardrails.”](https://www.wired.com/story/elon-musk-announces-grok-a-rebellious-ai-without-guardrails/). Wired.
-- [^paper-llm-hallucination]: [“Knowledge Injection to Counter Large Language Model (LLM) Hallucination.”](https://link.springer.com/chapter/10.1007/978-3-031-43458-7_34) Lecture Notes in Computer Science, January, 182–85.
-- [^paper-fb-polarization]: [“Social Media, News Consumption, and Polarization: Evidence from a Field Experiment.”](https://www.aeaweb.org/articles?id=10.1257/aer.20191777) American Economic Review 111 (3): 831–70.
-- [^paper-some-encage]: [“Engagement, user satisfaction, and the amplification of divisive content on social media.”](https://academic.oup.com/pnasnexus/advance-article/doi/10.1093/pnasnexus/pgaf062/8052060) PNAS Nexus (2025): pgaf062.
-- [^paper-llm-hal-study]: [“A Comprehensive Survey of Hallucination Mitigation Techniques in Large Language Models.”](https://arxiv.org/abs/2401.01313) ArXiv.org.
-- [^paper-greenai]: [“Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade Offs in Large Language Model Training.”](https://link.springer.com/article/10.1007/s44163-024-00149-w) Discover Artificial Intelligence.
-- [^paper-llm-sum]: [“Element-Aware Summarization with Large Language Models: Expert-Aligned Evaluation and Chain-of-Thought Method.”](https://aclanthology.org/2023.acl-long.482/) ArXiv (Cornell University)
-- [^paper-sum-bench]: [“Benchmarking Large Language Models for News Summarization.”](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00632/119276/Benchmarking-Large-Language-Models-for-News) Transactions of the Association for Computational Linguistics 12 (January): 39–57.
-- [^paper-news-sum]: [“News Summarization and Evaluation in the Era of GPT-3.”](https://arxiv.org/abs/2209.12356) arXiv preprint.
+[^chatgpt-policy]: [“Usage Policies.”](https://openai.com/policies/usage-policies/) Openai.com.
+[^chatgpt-no-nsfw]: [“Model Spec (2024/05/08).”](https://cdn.openai.com/spec/model-spec-2024-05-08.html#dont-respond-with-nsfw-content) Openai.com.
+[^deepseek-tian]: [“We Tried out DeepSeek. It Worked Well, until We Asked It about Tiananmen Square and Taiwan.”](https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan) The Guardian.
+[^deepseek-cn-prop]: [“DeepSeek’s Answers Include Chinese Propaganda, Researchers Say.”](https://www.nytimes.com/2025/01/31/technology/deepseek-chinese-propaganda.html) The New York Times.
+[^xai-antiwoke]: [“Inside Grok’s War on ‘Woke.’”](https://www.businessinsider.com/xai-grok-training-bias-woke-idealogy-2025-02?op=1) Business Insider.
+[^xai-rebel]: [“Elon Musk Announces Grok, a ‘Rebellious’ AI With Few Guardrails.”](https://www.wired.com/story/elon-musk-announces-grok-a-rebellious-ai-without-guardrails/). Wired.
+[^paper-llm-hallucination]: [“Knowledge Injection to Counter Large Language Model (LLM) Hallucination.”](https://link.springer.com/chapter/10.1007/978-3-031-43458-7_34) Lecture Notes in Computer Science, January, 182–85.
+[^paper-fb-polarization]: [“Social Media, News Consumption, and Polarization: Evidence from a Field Experiment.”](https://www.aeaweb.org/articles?id=10.1257/aer.20191777) American Economic Review 111 (3): 831–70.
+[^paper-some-encage]: [“Engagement, user satisfaction, and the amplification of divisive content on social media.”](https://academic.oup.com/pnasnexus/advance-article/doi/10.1093/pnasnexus/pgaf062/8052060) PNAS Nexus (2025): pgaf062.
+[^paper-llm-hal-study]: [“A Comprehensive Survey of Hallucination Mitigation Techniques in Large Language Models.”](https://arxiv.org/abs/2401.01313) ArXiv.org.
+[^paper-greenai]: [“Green AI: Exploring Carbon Footprints, Mitigation Strategies, and Trade Offs in Large Language Model Training.”](https://link.springer.com/article/10.1007/s44163-024-00149-w) Discover Artificial Intelligence.
+[^paper-llm-sum]: [“Element-Aware Summarization with Large Language Models: Expert-Aligned Evaluation and Chain-of-Thought Method.”](https://aclanthology.org/2023.acl-long.482/) ArXiv (Cornell University)
+[^paper-sum-bench]: [“Benchmarking Large Language Models for News Summarization.”](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00632/119276/Benchmarking-Large-Language-Models-for-News) Transactions of the Association for Computational Linguistics 12 (January): 39–57.
+[^paper-news-sum]: [“News Summarization and Evaluation in the Era of GPT-3.”](https://arxiv.org/abs/2209.12356) arXiv preprint.
