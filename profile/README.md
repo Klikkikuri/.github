@@ -116,7 +116,7 @@ Lisäksi maksullisen palvelun käyttäjät voivat vaikuttaa suoraan sisällytett
 
 Jotta Klikkikuri-palvelu tukee uutissivua, sille tarvitaan riittävästi kysyntää käyttäjäkunnan keskuudessa. Tämän mittaaminen on tosin hankalaa, sillä Klikkikuri ei kerää mitään käyttäjätietoja. Jossain määrin mennään täten äänekkäiden terrorilla.
 
-Klikkikuri myös erottaa uutislähteet ja uutissivustot toisistaan. *uutislähde* määritellään tässä yhteydessä uutisjulkaisijaksi. *Uutislähteiden* tukeminen vaatii myös uutisten prosessointiin tuen. *Uutissivusto* taas määritellään yksittäiseksi verkkosivustoksi, joka julkaisee uutisia. *Uutissivuston* tukeminen vaatii lähinnä selainlaajennuksen tuen, jotta otsikoiden oikaisu voidaan tehdä käyttäjälle.
+Klikkikuri myös erottaa uutislähteet ja uutissivustot toisistaan. *uutislähde* määritellään tässä yhteydessä uutisten tuottajaksi, jonka tukeminen vaatii myös uutisten prosessointiin tuen. *Uutissivusto* taas määritellään yksittäiseksi verkkosivustoksi, joka julkaisee uutisia tai linkkejä. *Uutissivuston* tukeminen vaatii lähinnä selainlaajennuksen tuen.
 
 #### Sisällyttämiskäytäntö
 
