@@ -7,8 +7,8 @@
 *Koe uutiset luotettavimmiksi.*
 
 - [Klikkikuri – uutiset ilman klikkiotsikoita](#klikkikuri--uutiset-ilman-klikkiotsikoita)
-  - [Asennus](#asennus)
   - [Ominaisuudet](#ominaisuudet)
+  - [Asennus](#asennus)
   - [Toiminta](#toiminta)
     - [Palvelun toimintamalli](#palvelun-toimintamalli)
     - [Yksityisyys](#yksityisyys)
@@ -19,26 +19,27 @@
     - [Voinko tehdä jotain jos oikaistu otsikko on huonompi kuin alkuperäinen?](#voinko-tehdä-jotain-jos-oikaistu-otsikko-on-huonompi-kuin-alkuperäinen)
     - [Kuinka usein uutisotsikoita päivitetään?](#kuinka-usein-uutisotsikoita-päivitetään)
     - [Mitä maksullinen tilausversio sisältää?](#mitä-maksullinen-tilausversio-sisältää)
+    - [Milllä perusteella tuetut uutissivustot valitaan?](#milllä-perusteella-tuetut-uutissivustot-valitaan)
+      - [Sisällyttämiskäytäntö](#sisällyttämiskäytäntö)
+    - [Seuraako Klikkikuri uutisia joita luen?](#seuraako-klikkikuri-uutisia-joita-luen)
     - [Toimiiko Klikkikuri sosiaalisessa mediassa?](#toimiiko-klikkikuri-sosiaalisessa-mediassa)
     - [Voinko käyttää Klikkikuria mobiililaitteilla?](#voinko-käyttää-klikkikuria-mobiililaitteilla)
-    - [Seuraako Klikkikuri uutisia joita luen?](#seuraako-klikkikuri-uutisia-joita-luen)
     - [Mikä on selainlaajennuksen mukana tuleva binääri?](#mikä-on-selainlaajennuksen-mukana-tuleva-binääri)
     - [Tuhoaako Klikkikuri luontoa?](#tuhoaako-klikkikuri-luontoa)
   - [Kiitokset](#kiitokset)
-  - [Lähteet](#lähteet)
-
-## Asennus
-
-Selainlaajennus on saataville toistaiseksi vain Mozilla Firefoxille. Lataa [Klikkuri Paatti -selainlaajennus](https://github.com/Klikkikuri/paatti/releases) ja asenna se selaimeesi. Laajennus toimii automaattisesti, kun vierailet tuetuilla uutissivustoilla.
 
 ## Ominaisuudet
 
  - **Automaattinen otsikoiden oikaisu**: muokkaa klikkiotsikot vastaamaan paremmin uutisen sisältöä.
  - **Helppokäyttöisyys**: toimii useimmissa verkkoselaimissa ilman monimutkaisia asennusta.
- - **Avoin lähdekoodi**: varmistaa palvelun toiminnan läpinäkyvyyden ja jatkuvan kehityksen.
+ - **Avoin lähdekoodi**: EUPL-1.2-lisenssi[^eupl] varmistaa palvelun toiminnan läpinäkyvyyden ja estää koodin kaappaamisen suljetuksi tuotteeksi[^no-cla].
  - **Freemium-malli**: ilmainen perusversio, maksullinen korjaus paywall-sivustoille.
 
+## Asennus
 
+Selainlaajennus on saavilla [Google Chromelle](https://chromewebstore.google.com/detail/klikkikuri-paatti/jalegaigmgljhnaakmbbaajooffgcbgc) ja [Mozilla Firefoxille](https://addons.mozilla.org/fi-FI/firefox/addon/klikkikuri/). Jotkin chrome-pohjaiset selaimet kuten Brave voivat myös ladata lajennuksen, mutta emme voi taata laajennuksen toimivuutta niissä. Laajennus on saatavilla myös suoraan [GitHubista *Klikkikuri/paatti*](https://github.com/Klikkikuri/paatti/releases).
+
+Lataa laajennus Google Chromelle [🛍️ Chrome Web Storesta](https://chromewebstore.google.com/detail/klikkikuri-paatti/jalegaigmgljhnaakmbbaajooffgcbgc) tai Mozilla Firefoxille [🦊 Firefox Add-onsista](https://addons.mozilla.org/fi-FI/firefox/addon/klikkikuri/).
 
 ## Toiminta
 
@@ -61,11 +62,13 @@ Näin Klikkikuri tarkistaa uutisen sisällön ja otsikon vastaavuuden:
 ### Yksityisyys
 
 Klikkikuri-laajennus ei kerää käyttäjältä tietoja muissa tilanteissa kuin:
-- Käyttäjä erikseen laittaa päälle vikatilanteiden raportointityökalun
 - Käyttäjä osallistuu käyttäjätutkimukseen, jolloin kerättävä tieto on erikseen määritelty ja rajattu
 - Käyttäjä ilmoittaa virheellisestä otsikosta
+- Käyttäjä ilmoittautuu maksulliseen palveluun
 
-Käyttämällä paikallista vedosta tietokannasta palveluun ei tarvitse myöskään lähettää kutsuja, jolloin palvelu ei voi seurata käyttäjien uutissivusto-käyttäytymistä.
+Käyttämällä paikallista vedosta tietokannasta laajennuksen ei tarvitse myöskään lähettää kutsuja ulkoiseen palveluun, jolloin palvelu ei voi seurata käyttäjien uutissivusto-käyttäytymistä.
+
+Lue lisää Klikkikuri Paatti "Privacy Policy" -dokumentista: [https://github.com/Klikkikuri/paatti/blob/main/docs/PRIVACY_POLICY.md](https://github.com/Klikkikuri/paatti/blob/main/docs/PRIVACY_POLICY.md).
 
 ## Usein kysyttyjä kysymyksiä
 
@@ -81,7 +84,7 @@ Kielimalleihin rakennettuja sensuuri-, puolueellisuus-, ja ennakkoasenteita vast
 
 Klikkikuri muuttaa ainoastaan otsikot linkeissä, kuten etusivulla jossa tyypillisesti on ainoastaan otsikko sekä mahdollisesti ingressi. Varsinaisen artikkelin otsikko jätetään vastamaan alkuperäistä.
 
-Laajennuksen voi ottaa myös pois käytöstä väliaikaisesti, sekä asetuksista määritellä kuinka paljon otsikoiden tulee olla harhaanjohtava ennen kuin ne muutetaan.
+Laajennuksen voi ottaa myös pois käytöstä sivustokohtaisesti, sekä asetuksista määritellä kuinka paljon otsikoiden tulee olla harhaanjohtava ennen kuin ne muutetaan.
 
 ### Miksi näen edelleen klikkiotsikoita?
 
@@ -89,7 +92,7 @@ Selainlaajennus käyttää staattista listaa yksityisyyden suojaamiseksi. Staatt
 
 Ilmaisversio ei myöskään pysty muuttamaan maksumuurien takana olevia uutisia, joten timanttijutut / plus-artikkelit yms. jäävät alkuperäiseksi.
 
-Rajallisten resurssien vuoksi vain yleisimmät ja toivotuimmat sivustot ovat tuettuja. Myöskään sivustot jotka eivät pyri _totuudenmukaiseen_ uutisointiin – kuten puoluelehdet – eivät tule olemaan tuettuja.
+Rajallisten resurssien vuoksi vain yleisimmät ja toivotuimmat sivustot ovat tuettuja. Myöskään sivustot jotka eivät pyri _totuudenmukaiseen_ uutisointiin – kuten puoluelehdet – eivät tule olemaan tuettuja (kts. [Milllä perusteella tuetut uutissivustot valitaan?](#milllä-perusteella-tuetut-uutissivustot-valitaan)).
 
 Selainlaajennus ei myöskään pyri muuttamaan kaikkia otsikoita. Oletuksena pieni puutteellisuus otsikoissa sallitaan. Tätä voi käyttäjä itse säätää, ja halutessaan korvata vaikkapa kaikki tekoälyn tekemällä versiolla, jos tykkää kuivasta otsikoinnista.
 
@@ -109,21 +112,33 @@ Maksullinen versio sisältää oikaisun myös maksumuurin takana oleviin uutisii
 
 Lisäksi maksullisen palvelun käyttäjät voivat vaikuttaa suoraan sisällytettävien uutissivustojen listaan äänestämällä.
 
+### Milllä perusteella tuetut uutissivustot valitaan?
+
+Jotta Klikkikuri-palvelu tukee uutissivua, sille tarvitaan riittävästi kysyntää käyttäjäkunnan keskuudessa. Tämän mittaaminen on tosin hankalaa, sillä Klikkikuri ei kerää mitään käyttäjätietoja. Jossain määrin mennään täten äänekkäiden terrorilla.
+
+Klikkikuri myös erottaa uutislähteet ja uutissivustot toisistaan. *uutislähde* määritellään tässä yhteydessä uutisjulkaisijaksi. *Uutislähteiden* tukeminen vaatii myös uutisten prosessointiin tuen. *Uutissivusto* taas määritellään yksittäiseksi verkkosivustoksi, joka julkaisee uutisia. *Uutissivuston* tukeminen vaatii lähinnä selainlaajennuksen tuen, jotta otsikoiden oikaisu voidaan tehdä käyttäjälle.
+
+#### Sisällyttämiskäytäntö
+
+1. Uutislähteen tulee **pyrkiä ensisijaiseti fakta-pohjaiseen journalismiin**. Uutislähteet jotka ovat lähtökohtaisesti mielide-, tai arvo-pohjaisia, eivät ole tuettuja. Otsikoiden muuttaminen toisi tällaisilla sivustoilla valheellista uskottavuutta. Klikkikurin toimii klikkiotsikoiden oikaisuun, ei faktantarkistimena.
+2. Uutislähteelle tulee olla **riittävästi käyttäjien kysyntää**. Klikkikuri ei omaa keinoa seurata mitä uutislähteitä käyttäjät lukevat, joten uutislähteiden tuki perustuu lukijakunnan äänekkyyteen. Uutislähteet joita käyttäjäkunta ei seuraa, vie resursseja ja voi estää seuratumpien uutislähteiden tukemisen.
+3. Selkeä indeksi / etusivu. Klikkikuri **prosessoi ainoastaan etusivun, kategoriasivujen ja linkkisyötteiden sisältöä**.
+
+### Seuraako Klikkikuri uutisia joita luen?
+
+**Ei**. Katso [Yksityisyys](#yksityisyys).
+
 ### Toimiiko Klikkikuri sosiaalisessa mediassa?
 
-Ei toistaiseksi. Joitain aggregaattisivuja kuten _Ampparit_ saatetaan tukea tulevaisuudessa. Sosiaalisen median alustat kuten Facebook ja Twitter lähtökohtaisesti kohdistaa käyttäjilleen "mieluisaa" sisältöä, olkoonkin se monesti erittäin klikkiotsikkomaista – tunnelatautunutta ja "ulkopuolisille" vihamielistä [^paper-fb-polarization][^paper-some-encage]. Sivustot kuten Reddit taas nojaa klikkiotsikoissa moderaattorien toimintaan.
+**Ei**. Joitain aggregaattisivuja kuten _Ampparit_ saatetaan tukea tulevaisuudessa. Sosiaalisen median alustat kuten Facebook ja Twitter lähtökohtaisesti kohdistaa käyttäjilleen "mieluisaa" sisältöä, olkoonkin se monesti erittäin klikkiotsikkomaista – tunnelatautunutta ja "ulkopuolisille" vihamielistä [^paper-fb-polarization][^paper-some-encage]. Sivustot kuten Reddit taas nojaa klikkiotsikoissa moderaattorien toimintaan.
 
 ### Voinko käyttää Klikkikuria mobiililaitteilla?
 
 Ainoastaan jotkin mobiiliselaimet ovat selainlaajennuksen tukemia. Myöskään monet mobiiliselaimet eivät tue laajennuksia. Sivustojen omat sovellukset eivät ole tuettuja – poikkeuksena [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app) -sovellukset jos ne ovat asennettu tuetusta selaimesta.
 
-### Seuraako Klikkikuri uutisia joita luen?
-
-Ei. Katso [Yksityisyys](#yksityisyys).
-
 ### Mikä on selainlaajennuksen mukana tuleva binääri?
 
-Selainlaajunneksen mukana tule binääri on [WebAssembly modulli joka vastaa otsikoiden tunnistamisesta](https://github.com/Klikkikuri/suola). Moduuli on binääri, jotta sekä taustapuolen prosessointi, että selainlaajennus voivat käyttää samaa koodia eroavaisuuksien välttämiseksi. Selainlaajennuksen mukana tuleva moduuli on täysin sama mikä on saatavilla githubista, ja varmistettavissa että binääri vastaa lähdekoodia joka on ollut githubissa sen kääntöhetkellä (`gh attestation verify --repo Klikkikuri/suola js.wasm`).
+Selainlaajunneksen mukana tule binääri on [WebAssembly modulli joka vastaa otsikoiden tunnistamisesta](https://github.com/Klikkikuri/suola). Moduuli on binääri, jotta sekä taustapuolen prosessointi, että selainlaajennus voivat käyttää samaa koodia eroavaisuuksien välttämiseksi. Selainlaajennuksen mukana tuleva moduuli on täysin sama mikä on saatavilla githubista, ja varmistettavissa että binääri vastaa lähdekoodia joka on ollut githubissa sen kääntöhetkellä (`gh attestation verify --repo Klikkikuri/suola build/js.wasm`).
 
 ### Tuhoaako Klikkikuri luontoa?
 
@@ -133,8 +148,10 @@ Ikävä kyllä[^paper-greenai]. Vaikutusten vähentämiseksi Klikkikuri-palvelu 
 
 Klikkikurin kehitys on mahdollista kiitos [Jyväskylän Yliopiston](https://www.jyu.fi), [Jyväskylän kaupungin](https://www.jyvaskyla.fi) sekä [Jyväskylän Ammattikorkeakoulun](https://www.jamk.fi) omistaman [Jyväskylän Yritystehtaan myöntämän rahoituksen](https://yritystehdas.fi/tuotekehitysrahoitus) ansiosta. Tehty ❤️ Jyväskylässä.
 
-## Lähteet
 
+
+[^eupl]: [“EUPL-1.2.”](https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12) *European Union Public Licence* on EU:n virallinen avoimen lähdekoodin copyleft-lisenssi. Juridisesti se eroutuu muista lisensseistä 23 yhtäläisesti pätevän kieliversion, EU-oikeuteen sovitetun vastuu- ja tekijänoikeussääntelyn sekä sisäänrakennetun lisenssiyhteensopivuuden (Artikla 5) ansiosta.
+[^no-cla]: Klikkikuri ei käytä CLA-sopimusta, joka mahdollistaisi ns. Open Core -mallin tai äkillisen muutoksen suljetuksi palveluksi. Jos haluat tehtä tästä vieläkin vaikeampaa, osallistu Klikkikurin kehitykseen ja tee pull request, niin voit varmistaa että koodin linsessimuutos muuttuu mahdollisimman kivuliaaksi.
 [^chatgpt-policy]: [“Usage Policies.”](https://openai.com/policies/usage-policies/) Openai.com.
 [^chatgpt-no-nsfw]: [“Model Spec (2024/05/08).”](https://cdn.openai.com/spec/model-spec-2024-05-08.html#dont-respond-with-nsfw-content) Openai.com.
 [^deepseek-tian]: [“We Tried out DeepSeek. It Worked Well, until We Asked It about Tiananmen Square and Taiwan.”](https://www.theguardian.com/technology/2025/jan/28/we-tried-out-deepseek-it-works-well-until-we-asked-it-about-tiananmen-square-and-taiwan) The Guardian.
