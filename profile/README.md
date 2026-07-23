@@ -37,9 +37,9 @@
 
 ## Asennus
 
-Selainlaajennus on saavilla [Google Chromelle](https://chromewebstore.google.com/detail/klikkikuri-paatti/jalegaigmgljhnaakmbbaajooffgcbgc) ja [Mozilla Firefoxille](https://addons.mozilla.org/fi-FI/firefox/addon/klikkikuri/). Jotkin chrome-pohjaiset selaimet kuten Brave voivat myös ladata lajennuksen, mutta emme voi taata laajennuksen toimivuutta niissä. Laajennus on saatavilla myös suoraan [GitHubista *Klikkikuri/paatti*](https://github.com/Klikkikuri/paatti/releases).
+Selainlaajennus on saavilla [Google Chromelle](https://chromewebstore.google.com/detail/klikkikuri-paatti/jalegaigmgljhnaakmbbaajooffgcbgc?hl=fi) ja [Mozilla Firefoxille](https://addons.mozilla.org/fi-FI/firefox/addon/klikkikuri/). Jotkin chrome-pohjaiset selaimet kuten Brave voivat myös ladata lajennuksen, mutta emme voi taata laajennuksen toimivuutta niissä. Laajennus on saatavilla myös suoraan [GitHubista *Klikkikuri/paatti*](https://github.com/Klikkikuri/paatti/releases).
 
-Lataa laajennus Google Chromelle [🛍️ Chrome Web Storesta](https://chromewebstore.google.com/detail/klikkikuri-paatti/jalegaigmgljhnaakmbbaajooffgcbgc) tai Mozilla Firefoxille [🦊 Firefox Add-onsista](https://addons.mozilla.org/fi-FI/firefox/addon/klikkikuri/).
+Lataa laajennus Google Chromelle [🛍️ Chrome Web Storesta](https://chromewebstore.google.com/detail/klikkikuri-paatti/jalegaigmgljhnaakmbbaajooffgcbgc?hl=fi) tai Mozilla Firefoxille [🦊 Firefox Add-onsista](https://addons.mozilla.org/fi-FI/firefox/addon/klikkikuri/).
 
 ## Toiminta
 
