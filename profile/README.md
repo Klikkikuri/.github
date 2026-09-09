@@ -70,6 +70,25 @@ Käyttämällä paikallista vedosta tietokannasta laajennuksen ei tarvitse myös
 
 Lue lisää Klikkikuri Paatti "Privacy Policy" -dokumentista: [https://github.com/Klikkikuri/paatti/blob/main/docs/PRIVACY_POLICY.md](https://github.com/Klikkikuri/paatti/blob/main/docs/PRIVACY_POLICY.md).
 
+## Maksullinen palvelu
+
+> [!NOTE]
+> Maksullinen palvelu ei ole vielä saatavilla.
+
+Klikkikuri tarjoaa maksullisena lisäpalveluna otsikoiden oikaisun myös maksumuurin takana oleviin
+uutisiin. Muuta toiminnallisuutta ei ole maksumuurin takana. Maksulla katetaan pääsy maksullisiin
+uutisiin sekä kielimallien ajamisen kulut.
+
+### Maksumuurien takana olevien uutisten prosessointi
+
+Omalla [meri](https://github.com/Klikkikuri/meri)-instanssilla maksumuurin takaisten uutisten
+prosessointi on teknisesti mahdollista, mutta Klikkikuri ei tue sitä. Se voi rikkoa uutissivuston
+käyttöehtoja, ja sisällön kopiointi edellyttää oikeudenhaltijan lupaa – vastuu tästä on
+käyttäjällä.
+
+Klikkikurin oma palvelu käyttää maksumuurien takaisiin uutisiin eri menetelmää, joka on suunniteltu
+toimimaan tekijänoikeuslain puitteissa.
+
 ## Usein kysyttyjä kysymyksiä
 
 ### Kuinka luotettava Klikkikuri on?
