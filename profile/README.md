@@ -41,6 +41,8 @@ Selainlaajennus on saavilla [Google Chromelle](https://chromewebstore.google.com
 
 Lataa laajennus Google Chromelle [🛍️ Chrome Web Storesta](https://chromewebstore.google.com/detail/klikkikuri-paatti/jalegaigmgljhnaakmbbaajooffgcbgc?hl=fi) tai Mozilla Firefoxille [🦊 Firefox Add-onsista](https://addons.mozilla.org/fi-FI/firefox/addon/klikkikuri/).
 
+Lisätietoja selainlaajennuksen ominaisuuksista ja toiminnasta on saatavilla [Klikkikuri/paatti](https://github.com/Klikkikuri/paatti)
+
 ## Toiminta
 
 ### Palvelun toimintamalli
@@ -159,9 +161,9 @@ Headline Cleaner on tilaukseen perustuva selainlaajennus, joka kertoo muuttavans
 
 Klikkikurin otsikko-oikaisu on ilmainen. Suunnitteilla olevalla maksullisella palvelulla katetaan uutisten prosessoinnin kulut sekä pääsy maksumuurien takana oleviin uutisiin (kts. [Mitä maksullinen tilausversio sisältää?](#mitä-maksullinen-tilausversio-sisältää)).
 
-Laajennukset on suunniteltu eri lähtökohdista. Headline Cleaner kuvaa lisäävänsä jokaisen otsikon viereen omalla logollaan varustetun painikkeen, ja otsikko muutetaan vasta kun painiketta klikataan. Se vaatii siis käyttäjän toimen jokaista linkkiä kohden ja näkyy sivulla koko ajan.
+Laajennukset on suunniteltu eri lähtökohdista. Headline Cleaner kuvaa lisäävänsä jokaisen otsikon viereen omalla logollaan varustetun painikkeen, ja otsikko muutetaan vasta kun painiketta klikataan. Se vaatii siis käyttäjän toimen jokaista linkkiä kohden ja näkyy sivulla koko ajan. Koska muunnos tehdään vasta pyydettäessä, jokainen otsikko edellyttää yhteyttä palvelimeen – ja jos otsikkoa ei ole vielä prosessoitu, sen käsittelyyn kuluu lisäksi oma aikansa.
 
-Klikkikuri pyrkii päinvastaiseen. Otsikot vaihdetaan suoraan linkkeihin sitä mukaa kun sivu latautuu tai sitä selataan, ilman erillistä painiketta – teknisesti toiminta vastaa enemmän mainostenestolaajennusta. Laajennus pysyy muutenkin poissa tieltä, ellei sitä erikseen avata, ja merkinnät vaihdetuista otsikoista ovat valinnaisia.
+Klikkikuri pyrkii päinvastaiseen. Otsikot on prosessoitu valmiiksi jo ennen kuin avaat sivun, joten laajennus lukee ne paikallisesta listasta ja vaihtaa sivun kaikki otsikot kerralla millisekunneissa ilman yhteyttä palvelimeen – myös sitä mukaa kun selaat sivua alaspäin. Teknisesti toiminta vastaa enemmän mainostenestolaajennusta: laajennus pysyy poissa tieltä, ellei sitä erikseen avata, ja merkinnät vaihdetuista otsikoista ovat opt-in tyyppisesti valinnaisia.
 
 Tietosuojaselosteensa mukaan Headline Cleaner lähettää palvelimelle klikatun otsikon tekstin ja verkko-osoitteen, tapahtuman tyypin ja ajankohdan sekä asennuskohtaisen tunnisteen. Klikkikuri lukee otsikot paikallisesta listasta omalla laitteellasi, eikä laajennuksessa ole analytiikkaa tai telemetriaa, joten selaamisesta ei synny vastaavaa tietoa (kts. [Yksityisyys](#yksityisyys)). Klikkikurin lähdekoodi, kielimallien ohjeet ja käytetyt mallit ovat julkisia (kts. [Kuinka luotettava Klikkikuri on?](#kuinka-luotettava-klikkikuri-on)); Headline Cleanerin sivustolla vastaavia tietoja ei kerrota.
 
@@ -169,7 +171,7 @@ Tietosuojaselosteensa mukaan Headline Cleaner lähettää palvelimelle klikatun 
 
 ### Voinko käyttää Klikkikuria mobiililaitteilla?
 
-Monet mobiiliselaimet eivät tue laajennuksia, ja tällä hetkellä ainoa tuettu mobiiliselain of Firefox for Android. Sivustojen omat sovellukset eivät ole tuettuja – poikkeuksena [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app) -sovellukset jos ne ovat asennettu tuetusta selaimesta.
+Monet mobiiliselaimet eivät tue laajennuksia, ja tällä hetkellä ainoa tuettu mobiiliselain on *Firefox for Android*. Sivustojen omat sovellukset eivät ole tuettuja – poikkeuksena [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app) -sovellukset jos ne ovat asennettu tuetusta selaimesta.
 
 ### Mikä on selainlaajennuksen mukana tuleva binääri?
 
