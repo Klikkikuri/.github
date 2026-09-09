@@ -41,7 +41,7 @@ Selainlaajennus on saavilla [Google Chromelle](https://chromewebstore.google.com
 
 Lataa laajennus Google Chromelle [🛍️ Chrome Web Storesta](https://chromewebstore.google.com/detail/klikkikuri-paatti/jalegaigmgljhnaakmbbaajooffgcbgc?hl=fi) tai Mozilla Firefoxille [🦊 Firefox Add-onsista](https://addons.mozilla.org/fi-FI/firefox/addon/klikkikuri/).
 
-Lisätietoja selainlaajennuksen ominaisuuksista ja toiminnasta on saatavilla [Klikkikuri/paatti](https://github.com/Klikkikuri/paatti)
+Lisätietoja selainlaajennuksen ominaisuuksista ja toiminnasta on saatavilla [Klikkikuri/paatti](https://github.com/Klikkikuri/paatti?tab=readme-ov-file#readme)
 
 ## Toiminta
 
