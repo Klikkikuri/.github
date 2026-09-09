@@ -75,19 +75,13 @@ Lue lisää Klikkikuri Paatti "Privacy Policy" -dokumentista: [https://github.co
 > [!NOTE]
 > Maksullinen palvelu ei ole vielä saatavilla.
 
-Klikkikuri tarjoaa maksullisena lisäpalveluna otsikoiden oikaisun myös maksumuurin takana oleviin
-uutisiin. Muuta toiminnallisuutta ei ole maksumuurin takana. Maksulla katetaan pääsy maksullisiin
-uutisiin sekä kielimallien ajamisen kulut.
+Klikkikuri tarjoaa maksullisena lisäpalveluna otsikoiden oikaisun myös maksumuurin takana oleviin uutisiin. Muuta toiminnallisuutta ei ole maksumuurin takana. Maksulla katetaan pääsy maksullisiin uutisiin sekä prosessosoinnista syntyvät kulut.
 
 ### Maksumuurien takana olevien uutisten prosessointi
 
-Omalla [meri](https://github.com/Klikkikuri/meri)-instanssilla maksumuurin takaisten uutisten
-prosessointi on teknisesti mahdollista, mutta Klikkikuri ei tue sitä. Se voi rikkoa uutissivuston
-käyttöehtoja, ja sisällön kopiointi edellyttää oikeudenhaltijan lupaa – vastuu tästä on
-käyttäjällä.
+Omalla [meri](https://github.com/Klikkikuri/meri)-instanssilla maksumuurin takaisten uutisten prosessointi on teknisesti mahdollista, mutta Klikkikuri ei tue sitä. Se voi rikkoa uutissivuston käyttöehtoja, ja sisällön kopiointi edellyttää oikeudenhaltijan lupaa – vastuu tästä on käyttäjällä.
 
-Klikkikurin oma palvelu käyttää maksumuurien takaisiin uutisiin eri menetelmää, joka on suunniteltu
-toimimaan tekijänoikeuslain puitteissa.
+Klikkikurin oma palvelu käyttää maksumuurien takaisiin uutisiin eri menetelmää, joka on suunniteltu toimimaan tekijänoikeuslain puitteissa.
 
 ## Usein kysyttyjä kysymyksiä
 
@@ -158,6 +152,20 @@ Klikinsäästäjä oli Facebook-yhteisö, jossa lukijat ilmiantoivat harhaanjoht
 Klikinsäästäjässä otsikot käsiteltiin yksitellen ja jälkikäteen, sen jälkeen kun joku oli ne ilmiantanut. Klikkikuri oikaisee otsikot tuettujen uutissivustojen omilla sivuilla ennen kuin niitä klikataan, eikä vastausta tarvitse etsiä erillisestä palvelusta. Klikkikuri ei myöskään ohjaa liikennettä alkuperäiseen juttuun, toisin kuin klikkiotsikon jakaminen kommentoitavaksi.
 
 Klikkikuri on kuitenkin kapeampi. Se ei arvostele medioita eikä toimi faktantarkistimena (kts. [Sisällyttämiskäytäntö](#sisällyttämiskäytäntö)), vaan ainoastaan korvaa harhaanjohtavan otsikon jutun sisältöä paremmin vastaavalla.
+
+### Miten Klikkikuri eroaa Headline Cleanerista?
+
+Headline Cleaner on tilaukseen perustuva selainlaajennus, joka kertoo muuttavansa klikkiotsikot faktapohjaisiksi. Emme ole varmistaneet sen toimintaa, joten alla oleva perustuu palvelun [omiin ilmoituksiin](https://web.archive.org/web/20260218205957/https://headlinecleaner.com/fi/selainlaajennus) ja tietosuojaselosteeseen (tilanne 9/2026).
+
+Klikkikurin otsikko-oikaisu on ilmainen. Suunnitteilla olevalla maksullisella palvelulla katetaan uutisten prosessoinnin kulut sekä pääsy maksumuurien takana oleviin uutisiin (kts. [Mitä maksullinen tilausversio sisältää?](#mitä-maksullinen-tilausversio-sisältää)).
+
+Laajennukset on suunniteltu eri lähtökohdista. Headline Cleaner kuvaa lisäävänsä jokaisen otsikon viereen omalla logollaan varustetun painikkeen, ja otsikko muutetaan vasta kun painiketta klikataan. Se vaatii siis käyttäjän toimen jokaista linkkiä kohden ja näkyy sivulla koko ajan.
+
+Klikkikuri pyrkii päinvastaiseen. Otsikot vaihdetaan suoraan linkkeihin sitä mukaa kun sivu latautuu tai sitä selataan, ilman erillistä painiketta – teknisesti toiminta vastaa enemmän mainostenestolaajennusta. Laajennus pysyy muutenkin poissa tieltä, ellei sitä erikseen avata, ja merkinnät vaihdetuista otsikoista ovat valinnaisia.
+
+Tietosuojaselosteensa mukaan Headline Cleaner lähettää palvelimelle klikatun otsikon tekstin ja verkko-osoitteen, tapahtuman tyypin ja ajankohdan sekä asennuskohtaisen tunnisteen. Klikkikuri lukee otsikot paikallisesta listasta omalla laitteellasi, eikä laajennuksessa ole analytiikkaa tai telemetriaa, joten selaamisesta ei synny vastaavaa tietoa (kts. [Yksityisyys](#yksityisyys)). Klikkikurin lähdekoodi, kielimallien ohjeet ja käytetyt mallit ovat julkisia (kts. [Kuinka luotettava Klikkikuri on?](#kuinka-luotettava-klikkikuri-on)); Headline Cleanerin sivustolla vastaavia tietoja ei kerrota.
+
+*Headline Cleaner* ilmoittaa kuitenkin tukevansa useampia selaimia ja mobiililaitteita omalla sovelluksella sekä kattavansa yli 50 uutissivustoa kolmella kielellä. Klikkikuri keskittyy rajatummalle määrälle sivustoja, ja mobiilissa tuettuna on vain *Firefox for Android*.
 
 ### Voinko käyttää Klikkikuria mobiililaitteilla?
 
