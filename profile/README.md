@@ -2,16 +2,20 @@
 
 ![](assets/logo.png)
 
-**Klikkikuri** on selainlaajennus, joka tunnistaa ja oikaisee sensaatiohakuiset uutisotsikot kun selailet verkkolehtien uutissivuja. Tarjoamme ainoana suomalaisena ratkaisuna luotettavampaa uutisointia suomalaisille uutisten kuluttajille hyödyntäen tekoälyä ja avoimen lähdekoodin teknologiaa.
+**Klikkikuri** on selainlaajennus, joka tunnistaa ja oikaisee sensaatiohakuiset uutisotsikot kun selailet verkkolehtien uutissivuja. Tarjoamme luotettavampaa uutisointia suomalaisille uutisten kuluttajille hyödyntäen tekoälyä ja avoimen lähdekoodin teknologiaa.
 
 *Koe uutiset luotettavimmiksi.*
 
 - [Klikkikuri – uutiset ilman klikkiotsikoita](#klikkikuri--uutiset-ilman-klikkiotsikoita)
   - [Ominaisuudet](#ominaisuudet)
+  - [Tuetut uutissivustot](#tuetut-uutissivustot)
+    - [Kielet](#kielet)
   - [Asennus](#asennus)
   - [Toiminta](#toiminta)
     - [Palvelun toimintamalli](#palvelun-toimintamalli)
     - [Yksityisyys](#yksityisyys)
+  - [Maksullinen palvelu](#maksullinen-palvelu)
+    - [Maksumuurien takana olevien uutisten prosessointi](#maksumuurien-takana-olevien-uutisten-prosessointi)
   - [Usein kysyttyjä kysymyksiä](#usein-kysyttyjä-kysymyksiä)
     - [Kuinka luotettava Klikkikuri on?](#kuinka-luotettava-klikkikuri-on)
     - [Näenkö alkuperäisen otsikon mistään?](#näenkö-alkuperäisen-otsikon-mistään)
@@ -19,10 +23,12 @@
     - [Voinko tehdä jotain jos oikaistu otsikko on huonompi kuin alkuperäinen?](#voinko-tehdä-jotain-jos-oikaistu-otsikko-on-huonompi-kuin-alkuperäinen)
     - [Kuinka usein uutisotsikoita päivitetään?](#kuinka-usein-uutisotsikoita-päivitetään)
     - [Mitä maksullinen tilausversio sisältää?](#mitä-maksullinen-tilausversio-sisältää)
-    - [Milllä perusteella tuetut uutissivustot valitaan?](#milllä-perusteella-tuetut-uutissivustot-valitaan)
+    - [Millä perusteella tuetut uutissivustot valitaan?](#millä-perusteella-tuetut-uutissivustot-valitaan)
       - [Sisällyttämiskäytäntö](#sisällyttämiskäytäntö)
     - [Seuraako Klikkikuri uutisia joita luen?](#seuraako-klikkikuri-uutisia-joita-luen)
     - [Toimiiko Klikkikuri sosiaalisessa mediassa?](#toimiiko-klikkikuri-sosiaalisessa-mediassa)
+    - [Miten Klikkikuri eroaa Klikinsäästäjästä?](#miten-klikkikuri-eroaa-klikinsäästäjästä)
+    - [Miten Klikkikuri eroaa Headline Cleanerista?](#miten-klikkikuri-eroaa-headline-cleanerista)
     - [Voinko käyttää Klikkikuria mobiililaitteilla?](#voinko-käyttää-klikkikuria-mobiililaitteilla)
     - [Mikä on selainlaajennuksen mukana tuleva binääri?](#mikä-on-selainlaajennuksen-mukana-tuleva-binääri)
     - [Tuhoaako Klikkikuri luontoa?](#tuhoaako-klikkikuri-luontoa)
@@ -30,10 +36,25 @@
 
 ## Ominaisuudet
 
- - **Automaattinen otsikoiden oikaisu**: muokkaa klikkiotsikot vastaamaan paremmin uutisen sisältöä.
- - **Helppokäyttöisyys**: toimii useimmissa verkkoselaimissa ilman monimutkaisia asennusta.
- - **Avoin lähdekoodi**: EUPL-1.2-lisenssi[^eupl] varmistaa palvelun toiminnan läpinäkyvyyden ja estää koodin kaappaamisen suljetuksi tuotteeksi[^no-cla].
- - **Freemium-malli**: ilmainen perusversio, maksullinen korjaus paywall-sivustoille.
+ - **Kielimalli oikaisee otsikot automaattisesti** tuettujen uutislähteiden jutuille, eikä oikaisu odota kenenkään ilmiantoa.
+ - Lukija voi arvioida otsikon ja ehdottaa parannusta tai tilalle parempaa, ja säätää omaa sietokykyään klikkiotsikoille.
+ - Laajennus **vaihtaa otsikot sivun latautuessa** paikallisesta listasta, ilman yhteyttä klikkikurin palvelimiin.
+ - Toimii **useimmissa verkkoselaimissa** ilman monimutkaista asennusta.
+ - Koko palvelu on **avointa lähdekoodia** EUPL-1.2-lisenssillä[^eupl], mikä tekee toiminnasta läpinäkyvää ja estää koodin kaappaamisen suljetuksi tuotteeksi[^no-cla].
+ - Perusversio on **ilmainen**; maksullinen versio oikaisee myös maksumuurien takaiset otsikot.
+
+## Tuetut uutissivustot
+
+- *Helsingin Sanomat* (`hs.fi`)
+- *Iltalehti* (`iltalehti.fi`)
+- *Yle* (`yle.fi`)
+- *MTV Uutiset* (`mtvuutiset.fi`)
+- *Äänekosken Kaupunkisanomat* (`aksa.fi`)
+- *Ampparit* (`ampparit.com`)
+
+### Kielet
+
+Klikkikuri keskittyy suomalaiseen uutisointiin, mutta otsikoiden oikaisu toimii myös englanniksi. Ruotsinkielisten tuki on suunnitteilla. Palvelu pystyy käsittelemään muitakin kieliä, mutta niiden kohdalla lopputuloksen laatua ole varmistettu.
 
 ## Asennus
 
@@ -77,7 +98,7 @@ Lue lisää Klikkikuri Paatti "Privacy Policy" -dokumentista: [https://github.co
 > [!NOTE]
 > Maksullinen palvelu ei ole vielä saatavilla.
 
-Klikkikuri tarjoaa maksullisena lisäpalveluna otsikoiden oikaisun myös maksumuurin takana oleviin uutisiin. Muuta toiminnallisuutta ei ole maksumuurin takana. Maksulla katetaan pääsy maksullisiin uutisiin sekä prosessosoinnista syntyvät kulut.
+Klikkikuri tarjoaa maksullisena lisäpalveluna otsikoiden oikaisun myös maksumuurin takana oleviin uutisiin. Muuta toiminnallisuutta ei ole maksumuurin takana. Maksulla rahoitetaan pääsy maksullisiin uutisiin sekä käsittelystä syntyvät kulut.
 
 ### Maksumuurien takana olevien uutisten prosessointi
 
@@ -107,7 +128,7 @@ Selainlaajennus käyttää staattista listaa yksityisyyden suojaamiseksi. Staatt
 
 Ilmaisversio ei myöskään pysty muuttamaan maksumuurien takana olevia uutisia, joten timanttijutut / plus-artikkelit yms. jäävät alkuperäiseksi.
 
-Rajallisten resurssien vuoksi vain yleisimmät ja toivotuimmat sivustot ovat tuettuja. Myöskään sivustot jotka eivät pyri _totuudenmukaiseen_ uutisointiin – kuten puoluelehdet – eivät tule olemaan tuettuja (kts. [Milllä perusteella tuetut uutissivustot valitaan?](#milllä-perusteella-tuetut-uutissivustot-valitaan)).
+Rajallisten resurssien vuoksi vain yleisimmät ja toivotuimmat sivustot ovat tuettuja. Myöskään sivustot jotka eivät pyri _totuudenmukaiseen_ uutisointiin – kuten puoluelehdet – eivät tule olemaan tuettuja (kts. [Millä perusteella tuetut uutissivustot valitaan?](#millä-perusteella-tuetut-uutissivustot-valitaan)).
 
 Selainlaajennus ei myöskään pyri muuttamaan kaikkia otsikoita. Oletuksena pieni puutteellisuus otsikoissa sallitaan. Tätä voi käyttäjä itse säätää, ja halutessaan korvata vaikkapa kaikki tekoälyn tekemällä versiolla, jos tykkää kuivasta otsikoinnista.
 
@@ -127,7 +148,7 @@ Maksullinen versio sisältää oikaisun myös maksumuurin takana oleviin uutisii
 
 Lisäksi maksullisen palvelun käyttäjät voivat vaikuttaa suoraan sisällytettävien uutissivustojen listaan äänestämällä.
 
-### Milllä perusteella tuetut uutissivustot valitaan?
+### Millä perusteella tuetut uutissivustot valitaan?
 
 Jotta Klikkikuri-palvelu tukee uutissivua, sille tarvitaan riittävästi kysyntää käyttäjäkunnan keskuudessa. Tämän mittaaminen on tosin hankalaa, sillä Klikkikuri ei kerää mitään käyttäjätietoja. Jossain määrin mennään täten äänekkäiden terrorilla.
 
@@ -145,29 +166,31 @@ Klikkikuri myös erottaa uutislähteet ja uutissivustot toisistaan. *uutislähde
 
 ### Toimiiko Klikkikuri sosiaalisessa mediassa?
 
-**Ei**. Joitain aggregaattisivuja kuten _Ampparit_ saatetaan tukea tulevaisuudessa. Sosiaalisen median alustat kuten Facebook ja Twitter lähtökohtaisesti kohdistaa käyttäjilleen "mieluisaa" sisältöä, olkoonkin se monesti erittäin klikkiotsikkomaista – tunnelatautunutta ja "ulkopuolisille" vihamielistä [^paper-fb-polarization][^paper-some-encage]. Sivustot kuten Reddit taas nojaa klikkiotsikoissa moderaattorien toimintaan.
+**Ei**. Aggregaattisivuista *Ampparit* on tuettu, muiden kohdalla tilannetta voidaan arvioida tapauskohtaisesti. Sosiaalisen median alustat kuten Facebook ja Twitter lähtökohtaisesti kohdistaa käyttäjilleen "mieluisaa" sisältöä, olkoonkin se monesti erittäin klikkiotsikkomaista – tunnelatautunutta ja "ulkopuolisille" vihamielistä [^paper-fb-polarization][^paper-some-encage]. Sivustot kuten Reddit taas nojaa klikkiotsikoissa moderaattorien toimintaan.
 
 ### Miten Klikkikuri eroaa Klikinsäästäjästä?
 
 Klikinsäästäjä oli Facebook-yhteisö, jossa lukijat ilmiantoivat harhaanjohtavia otsikoita ja kertoivat, mistä jutussa oikeasti oli kyse. Yhteisö lopetti toimintansa vuonna 2021[^ks-loppu].
 
-Klikinsäästäjässä otsikot käsiteltiin yksitellen ja jälkikäteen, sen jälkeen kun joku oli ne ilmiantanut. Klikkikuri oikaisee otsikot tuettujen uutissivustojen omilla sivuilla ennen kuin niitä klikataan, eikä vastausta tarvitse etsiä erillisestä palvelusta. Klikkikuri ei myöskään ohjaa liikennettä alkuperäiseen juttuun, toisin kuin klikkiotsikon jakaminen kommentoitavaksi.
+Klikkikuri ei ole Klikinsäästäjän jatke. Otsikot kirjoittaa kielimalli automaattisesti kaikille tuettujen lähteiden jutuille, eikä oikaisu odota kenenkään ilmiantoa. Lukijapalaute vaikuttaa otsikoihin, mutta se on kielimallille annettavaa taustatietoa eikä julkaistavan otsikon lähde.
 
-Klikkikuri on kuitenkin kapeampi. Se ei arvostele medioita eikä toimi faktantarkistimena (kts. [Sisällyttämiskäytäntö](#sisällyttämiskäytäntö)), vaan ainoastaan korvaa harhaanjohtavan otsikon jutun sisältöä paremmin vastaavalla.
+Klikinsäästäjässä otsikot käsiteltiin yksitellen ja jälkikäteen, sen jälkeen kun joku oli ne ilmiantanut. Klikkikuri oikaisee otsikot suoraan uutissivustolla ennen kuin niitä klikataan, eikä vastausta tarvitse etsiä erillisestä palvelusta. Klikkikurin oikaisemia linkkejä varten ei myöskään tarvitse seurata erillistä palvelua tai sovellusta, vaan ne näkyvät suoraan uutissivustolla.
+
+Klikkikuri on kuitenkin kapeampi. Se ei arvostele medioita eikä toimi faktantarkistimena (kts. [Sisällyttämiskäytäntö](#sisällyttämiskäytäntö)), vaan ainoastaan korvaa harhaanjohtavan otsikon sellaisella, joka vastaa jutun sisältöä paremmin.
 
 ### Miten Klikkikuri eroaa Headline Cleanerista?
 
-Headline Cleaner on tilaukseen perustuva selainlaajennus, joka kertoo muuttavansa klikkiotsikot faktapohjaisiksi. Emme ole varmistaneet sen toimintaa, joten alla oleva perustuu palvelun [omiin ilmoituksiin](https://web.archive.org/web/20260218205957/https://headlinecleaner.com/fi/selainlaajennus) ja tietosuojaselosteeseen (tilanne 9/2026).
+Headline Cleaner on tilaukseen perustuva selainlaajennus, joka kertoo muuttavansa klikkiotsikot faktapohjaisiksi. Emme ole varmistaneet sen toimintaa, joten alla oleva perustuu palvelun [omiin ilmoituksiin](https://web.archive.org/web/20260218205957/https://headlinecleaner.com/fi/selainlaajennus) ja [tietosuojaselosteeseen](https://web.archive.org/web/20260903053116/https://headlinecleaner.com/privacy-policy) (tilanne 9/2026).
 
 Klikkikurin otsikko-oikaisu on ilmainen. Suunnitteilla olevalla maksullisella palvelulla katetaan uutisten prosessoinnin kulut sekä pääsy maksumuurien takana oleviin uutisiin (kts. [Mitä maksullinen tilausversio sisältää?](#mitä-maksullinen-tilausversio-sisältää)).
 
-Laajennukset on suunniteltu eri lähtökohdista. Headline Cleaner kuvaa lisäävänsä jokaisen otsikon viereen omalla logollaan varustetun painikkeen, ja otsikko muutetaan vasta kun painiketta klikataan. Se vaatii siis käyttäjän toimen jokaista linkkiä kohden ja näkyy sivulla koko ajan. Koska muunnos tehdään vasta pyydettäessä, jokainen otsikko edellyttää yhteyttä palvelimeen – ja jos otsikkoa ei ole vielä prosessoitu, sen käsittelyyn kuluu lisäksi oma aikansa.
+Laajennukset on suunniteltu eri lähtökohdista. Headline Cleaner kuvaa lisäävänsä jokaisen otsikon viereen omalla logollaan varustetun painikkeen, ja otsikko muutetaan vasta kun painiketta klikataan. Se vaatii siis käyttäjän toimen jokaista linkkiä kohden ja näkyy sivulla koko ajan. Koska muunnos tehdään vasta pyydettäessä, jokainen otsikko edellyttää yhteyttä palvelimeen – ja jos otsikkoa ei ole vielä käsitelty, sen käsittelyyn kuluu lisäksi oma aikansa.
 
-Klikkikuri pyrkii päinvastaiseen. Otsikot on prosessoitu valmiiksi jo ennen kuin avaat sivun, joten laajennus lukee ne paikallisesta listasta ja vaihtaa sivun kaikki otsikot kerralla millisekunneissa ilman yhteyttä palvelimeen – myös sitä mukaa kun selaat sivua alaspäin. Teknisesti toiminta vastaa enemmän mainostenestolaajennusta: laajennus pysyy poissa tieltä, ellei sitä erikseen avata, ja merkinnät vaihdetuista otsikoista ovat opt-in tyyppisesti valinnaisia.
+Klikkikuri pyrkii päinvastaiseen. Otsikot on käsitelty valmiiksi jo ennen kuin avaat sivun, joten laajennus lukee ne paikallisesta listasta ja vaihtaa sivun kaikki otsikot kerralla millisekunneissa ilman yhteyttä palvelimeen – myös sitä mukaa kun selaat sivua alaspäin. Teknisesti toiminta vastaa enemmän mainostenestolaajennusta: laajennus pysyy poissa tieltä, ellei sitä erikseen avata, ja merkinnät vaihdetuista otsikoista ovat valinnaisia.
 
 Tietosuojaselosteensa mukaan Headline Cleaner lähettää palvelimelle klikatun otsikon tekstin ja verkko-osoitteen, tapahtuman tyypin ja ajankohdan sekä asennuskohtaisen tunnisteen. Klikkikuri lukee otsikot paikallisesta listasta omalla laitteellasi, eikä laajennuksessa ole analytiikkaa tai telemetriaa, joten selaamisesta ei synny vastaavaa tietoa (kts. [Yksityisyys](#yksityisyys)). Klikkikurin lähdekoodi, kielimallien ohjeet ja käytetyt mallit ovat julkisia (kts. [Kuinka luotettava Klikkikuri on?](#kuinka-luotettava-klikkikuri-on)); Headline Cleanerin sivustolla vastaavia tietoja ei kerrota.
 
-*Headline Cleaner* ilmoittaa kuitenkin tukevansa useampia selaimia ja mobiililaitteita omalla sovelluksella sekä kattavansa yli 50 uutissivustoa kolmella kielellä. Klikkikuri keskittyy rajatummalle määrälle sivustoja, ja mobiilissa tuettuna on vain *Firefox for Android*.
+Headline Cleaner ilmoittaa kuitenkin tukevansa useampia selaimia ja mobiililaitteita omalla sovelluksella sekä kattavansa yli 50 uutissivustoa. Klikkikuri tukee rajatumpaa joukkoa sivustoja, ja mobiilissa tuettuna on vain *Firefox for Android*.
 
 ### Voinko käyttää Klikkikuria mobiililaitteilla?
 
