@@ -132,9 +132,17 @@ Klikkikuri myös erottaa uutislähteet ja uutissivustot toisistaan. *uutislähde
 
 **Ei**. Joitain aggregaattisivuja kuten _Ampparit_ saatetaan tukea tulevaisuudessa. Sosiaalisen median alustat kuten Facebook ja Twitter lähtökohtaisesti kohdistaa käyttäjilleen "mieluisaa" sisältöä, olkoonkin se monesti erittäin klikkiotsikkomaista – tunnelatautunutta ja "ulkopuolisille" vihamielistä [^paper-fb-polarization][^paper-some-encage]. Sivustot kuten Reddit taas nojaa klikkiotsikoissa moderaattorien toimintaan.
 
+### Miten Klikkikuri eroaa Klikinsäästäjästä?
+
+Klikinsäästäjä oli Facebook-yhteisö, jossa lukijat ilmiantoivat harhaanjohtavia otsikoita ja kertoivat, mistä jutussa oikeasti oli kyse. Yhteisö lopetti toimintansa vuonna 2021[^ks-loppu].
+
+Klikinsäästäjässä otsikot käsiteltiin yksitellen ja jälkikäteen, sen jälkeen kun joku oli ne ilmiantanut. Klikkikuri oikaisee otsikot tuettujen uutissivustojen omilla sivuilla ennen kuin niitä klikataan, eikä vastausta tarvitse etsiä erillisestä palvelusta. Klikkikuri ei myöskään ohjaa liikennettä alkuperäiseen juttuun, toisin kuin klikkiotsikon jakaminen kommentoitavaksi.
+
+Klikkikuri on kuitenkin kapeampi. Se ei arvostele medioita eikä toimi faktantarkistimena (kts. [Sisällyttämiskäytäntö](#sisällyttämiskäytäntö)), vaan ainoastaan korvaa harhaanjohtavan otsikon jutun sisältöä paremmin vastaavalla.
+
 ### Voinko käyttää Klikkikuria mobiililaitteilla?
 
-Ainoastaan jotkin mobiiliselaimet ovat selainlaajennuksen tukemia. Myöskään monet mobiiliselaimet eivät tue laajennuksia. Sivustojen omat sovellukset eivät ole tuettuja – poikkeuksena [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app) -sovellukset jos ne ovat asennettu tuetusta selaimesta.
+Monet mobiiliselaimet eivät tue laajennuksia, ja tällä hetkellä ainoa tuettu mobiiliselain of Firefox for Android. Sivustojen omat sovellukset eivät ole tuettuja – poikkeuksena [PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/What_is_a_progressive_web_app) -sovellukset jos ne ovat asennettu tuetusta selaimesta.
 
 ### Mikä on selainlaajennuksen mukana tuleva binääri?
 
@@ -166,3 +174,4 @@ Klikkikurin kehitys on mahdollista kiitos [Jyväskylän Yliopiston](https://www.
 [^paper-llm-sum]: [“Element-Aware Summarization with Large Language Models: Expert-Aligned Evaluation and Chain-of-Thought Method.”](https://aclanthology.org/2023.acl-long.482/) ArXiv (Cornell University)
 [^paper-sum-bench]: [“Benchmarking Large Language Models for News Summarization.”](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00632/119276/Benchmarking-Large-Language-Models-for-News) Transactions of the Association for Computational Linguistics 12 (January): 39–57.
 [^paper-news-sum]: [“News Summarization and Evaluation in the Era of GPT-3.”](https://arxiv.org/abs/2209.12356) arXiv preprint.
+[^ks-loppu]: [Klikinsäästäjän viimeinen julkaisu 15.11.2021.](https://www.facebook.com/klikinsaastaja/posts/1807067172819658) Facebook.
